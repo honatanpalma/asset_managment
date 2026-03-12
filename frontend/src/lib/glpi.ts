@@ -16,8 +16,7 @@ let sessionToken: string | null = null;
 /**
  * Helper function to make authenticated requests to GLPI API
  */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-async function glpiFetch(endpoint: string, options: RequestInit = {}) {
+export async function glpiFetch(endpoint: string, options: RequestInit = {}) {
   const headers: Record<string, string> = {
     'Content-Type': 'application/json',
     'App-Token': GLPI_APP_TOKEN,
